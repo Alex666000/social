@@ -3,13 +3,17 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import {AppContainer} from "./components/App/App";
 import {store} from './redux/redux-store';
-import {BrowserRouter, HashRouter} from "react-router-dom";
+import {HashRouter} from "react-router-dom";
 import {Provider} from "react-redux";
 
 ReactDOM.render(
-    <BrowserRouter>
+    <HashRouter>
         <Provider store={store}>
             <AppContainer/>
         </Provider>
-    </BrowserRouter>, document.getElementById('root')
+    </HashRouter>, document.getElementById('root')
 );
+
+/*
+https://todolist-project-2023-toolkit.vercel.app
+ */
